@@ -11,6 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/primaryColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Startup Adı" />
@@ -19,22 +21,29 @@
         android:id="@+id/tvFoundedYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvStartupName"
-        tools:text="Kuruluş Yılı: 2021" />
+        tools:text="Kuruluş Yılı: 2021"
+        android:textColor="@color/secondaryTextColor" />
 
     <TextView
         android:id="@+id/tvSector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvFoundedYear"
-        tools:text="Sektör: E-Ticaret" />
+        tools:text="Sektör: E-Ticaret"
+        android:textColor="@color/secondaryTextColor" />
 
     <TextView
         android:id="@+id/tvDescription"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/primaryTextColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvSector"
         tools:text="Açıklama" />
